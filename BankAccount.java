@@ -6,7 +6,7 @@ public class BankAccount{
 
   public BankAccount(double b, int a, String p){
     balance = b;
-    b = 0;
+    b = 0.00;
     accountID = a;
     password = p;
   }
