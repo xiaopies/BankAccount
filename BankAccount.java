@@ -10,6 +10,15 @@ public class BankAccount{
     accountID = a;
     password = p;
   }
+  public double balance(){
+    return balance;
+  }
+  public int accountID(){
+    return accountID;
+  }
+  public String password(){
+    return password;
+  }
 
 
 }
