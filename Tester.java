@@ -14,5 +14,6 @@ public class Tester{
     System.out.println(first.toString());
     System.out.println(first.balance());
     System.out.println(first.accountID());
+    first.setPassword("happy");
   }
 }
