@@ -26,6 +26,13 @@ public class BankAccount{
     }
     return false;
   }
+  public boolean withdraw(double amount){
+    if (amount>=0 && amount <=b){
+      balance-=amount;
+      return true;
+    }
+    return false;
+  }
 
 
 }
