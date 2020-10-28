@@ -19,6 +19,13 @@ public class BankAccount{
   public String password(){
     return password;
   }
+  public boolean deposit(double amount){
+    if (amount >= 0){
+      b+=amount;
+      return true;
+    }
+    return false;
+  }
 
 
 }
