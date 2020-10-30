@@ -35,4 +35,32 @@ public class BankAccount{
   public String toString(){
     return "#" + AccountID + "\t" + "$" + balance;
   }
+  private boolean authenticate(String password){
+    return password== this.password;
+  }
+  public boolean transferTo(BankAccount other, double amount, String password){
+    if (authenticate(password)){
+      System.out.println("Attempt to move $"+amount+" from the b1 to b2 account:");
+      if(this.withdraw(amount) ){
+        if(other.deposit(amount)){
+          System.out.println(this);
+          System.out.println(other);
+          System.out.println();
+          return true;
+
+        }else{
+          //This should never happen.
+          //Error message provided to make sure that is the case
+          System.out.println("CRITICAL ERROR! $"+amount +
+                             " withdrawn from Account #" +  this.getAccountID() +
+                             "Failed to add to Account #"+other.getAccountID());
+
+        }
+      }else{
+        System.out.println("Transfer Failed");
+
+      }
+    }
+    return false;
+  }
 }
