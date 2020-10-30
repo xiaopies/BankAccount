@@ -15,10 +15,8 @@ public class DriverBankAccount{
 
       double cashAmount = 300.0;
       while(cashAmount < 3000){
-        System.out.println(b1.transferTo(b2, 10000, "happyjason"));
-        System.out.println(b1);
-        System.out.println("Account b2:");
-        System.out.println(b2);
+        System.out.println(b1.transferTo(b2, 300.0, "abc123"));
+        System.out.println();
 
 
 
