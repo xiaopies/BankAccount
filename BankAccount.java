@@ -1,20 +1,19 @@
 public class BankAccount{
 
   private double balance;
-  private int accountID;
+  private int AccountID;
   private String password;
 
-  public BankAccount(double b, int a, String p){
-    balance = b;
-    b = 0.00;
-    accountID = a;
+  public BankAccount(int AccountID, String p){
+    this.balance = balance;
+    this.AccountID = AccountID;
     password = p;
   }
   public double balance(){
     return balance;
   }
-  public int accountID(){
-    return accountID;
+  public int getAccountID(){
+    return AccountID;
   }
   public void setPassword(String newPass){
     password=newPass;
@@ -34,8 +33,6 @@ public class BankAccount{
     return false;
   }
   public String toString(){
-    return accountID + "\t" + balance;
+    return "#" + AccountID + "\t" + "$" + balance;
   }
-
-
 }

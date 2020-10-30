@@ -13,7 +13,7 @@ public class Tester{
     System.out.println(first.deposit(a));
     System.out.println(first.toString());
     System.out.println(first.balance());
-    System.out.println(first.accountID());
+    System.out.println(first.getAccountID());
     first.setPassword("happy");
   }
 }
