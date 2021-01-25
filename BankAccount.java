@@ -9,7 +9,7 @@ public class BankAccount{
     this.AccountID = AccountID;
     password = p;
   }
-  public double balance(){
+  public double getBalance(){
     return balance;
   }
   public int getAccountID(){
